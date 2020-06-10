@@ -1,3 +1,5 @@
 node_modules
 .idea
 Traditional-V1-TestResults.txt
+package-lock.json
+logs

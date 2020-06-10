@@ -1,3 +1,4 @@
+const path = require('path');
 const timeout = process.env ? 99999999 : 30000;
 
 exports.config = {
@@ -46,31 +47,6 @@ exports.config = {
   //
   maxInstances: 1,
 
-  // capabilities: {
-  //   chromeLaptop: {
-  //     desiredCapabilities: {
-  //       browserName: 'chrome',
-  //       'goog:chromeOptions': {
-  //         args: ['--window-size=1200,500', '--no-sandbox']
-  //       },
-  //       deviceName: 'Laptop'
-  //     }
-  //   },
-  //   chromeTablet: {
-  //     desiredCapabilities: {
-  //       browserName: 'chrome',
-  //       'goog:chromeOptions': {
-  //         args: ['--window-size=768,500', '--no-sandbox']
-  //       },
-  //       deviceName: 'Tablet'
-  //     }
-  //   },
-  //   firefoxLaptop: {
-  //     desiredCapabilities: {
-  //       browserName: 'firefox'
-  //     }
-  //   }
-  // },
   capabilities: [
     //   {
     //   browserName: 'chrome',
@@ -110,12 +86,18 @@ exports.config = {
   //
   // Default request retries count
   connectionRetryCount: 3,
+  outputDir: path.join(__dirname, 'logs'),
   //
   // Test runner services
   // Services take over a specific job you don't want to take care of. They enhance
   // your test setup with almost no effort. Unlike plugins, they don't add new
   // commands. Instead, they hook themselves up into the test process.
   services: ['selenium-standalone'],
+  seleniumArgs: {
+    javaArgs: [
+      '-Dwebdriver.edge.driver=C:\\edge-driver\\msedgedriver.exe'
+    ]
+  },
   // Framework you want to run your specs with.
   // The following are supported: Mocha, Jasmine, and Cucumber
   // see also: https://webdriver.io/docs/frameworks.html

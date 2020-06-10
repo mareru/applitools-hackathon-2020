@@ -20,13 +20,13 @@ export default class HackathonReporter {
 
     setViewportSize() {
         if (this.isLaptop) {
-            browser.setViewportSize(1200, 500);
+            browser.setViewportSize(1200, 530);
         }
         if (this.isTablet) {
-            browser.setViewportSize(768, 500);
+            browser.setViewportSize(768, 530);
         }
         if(this.isMobile) {
-            browser.setViewportSize(500, 500);
+            browser.setViewportSize(500, 530);
         }
     }
 
