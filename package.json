@@ -9,8 +9,9 @@
     "test:firefox:tablet:v1": "cross-env APP_VERSION=V1 TABLET=true wdio src/resources/config/wdio.firefox.conf.js --spec test/TraditionalTestsV1.spec.ts",
     "test:edge:laptop:v1": "cross-env APP_VERSION=V1 LAPTOP=true wdio src/resources/config/wdio.edge.conf.js --spec test/TraditionalTestsV1.spec.ts",
     "test:edge:tablet:v1": "cross-env APP_VERSION=V1 TABLET=true wdio src/resources/config/wdio.edge.conf.js --spec test/TraditionalTestsV1.spec.ts",
+    "test:chrome:mobile:v1": "cross-env APP_VERSION=V1 MOBILE=true wdio src/resources/config/wdio.chrome.conf.js --spec test/TraditionalTestsV1.spec.ts",
 
-    "test:v1": "npm run test:chrome:laptop:v1 && npm run test:chrome:tablet:v1 && npm run test:firefox:laptop:v1 && npm run test:firefox:tablet:v1 && npm run test:edge:laptop:v1 && npm run test:edge:tablet:v1",
+    "test:v1": "npm run test:chrome:laptop:v1 && npm run test:chrome:tablet:v1 && npm run test:firefox:laptop:v1 && npm run test:firefox:tablet:v1 && npm run test:edge:laptop:v1 && npm run test:edge:tablet:v1 && npm run test:chrome:mobile:v1",
 
     "test:v2": "cross-env APP_VERSION=V2 wdio wdio.conf.js --spec test/TraditionalTestsV2.spec.ts",
     "test:visual:v1": "cross-env APP_VERSION=V1 VISUAL=true wdio wdio.conf.js --spec test/ModernTestsV1.spec.ts",
