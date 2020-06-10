@@ -1,5 +1,4 @@
 const timeout = process.env ? 99999999 : 30000;
-const { ViewportSizeService } = require("wdio-viewport-size");
 
 exports.config = {
   //
@@ -73,20 +72,13 @@ exports.config = {
   //   }
   // },
   capabilities: [
-      {
-      browserName: 'chrome',
-      'goog:chromeOptions': {
-        args: ['--window-size=1213,630', '--no-sandbox']
-      }
-    },
-    {
-      browserName: 'chrome',
-      'goog:chromeOptions': {
-        args: ['--window-size=781,630', '--no-sandbox']
-      }
-    },
+    //   {
+    //   browserName: 'chrome',
+    //   'goog:chromeOptions': {
+    //     args: ['--window-size=1213,630', '--no-sandbox']
+    //   }
+    // },
   ],
-  path: '/',
 
   // ===================
   // Test Configurations
@@ -123,7 +115,7 @@ exports.config = {
   // Services take over a specific job you don't want to take care of. They enhance
   // your test setup with almost no effort. Unlike plugins, they don't add new
   // commands. Instead, they hook themselves up into the test process.
-  services: ['chromedriver', [ViewportSizeService]],
+  services: ['selenium-standalone'],
   // Framework you want to run your specs with.
   // The following are supported: Mocha, Jasmine, and Cucumber
   // see also: https://webdriver.io/docs/frameworks.html
@@ -235,9 +227,8 @@ exports.config = {
     browser.addCommand('setViewportSize', setViewportSize);
   },
 
-  after: function(capabilities, specs) {
-    browser.closeWindow();
-  },
+  // after: function(capabilities, specs) {
+  // },
   /**
    * Runs before a WebdriverIO command gets executed.
    * @param {String} commandName hook command name

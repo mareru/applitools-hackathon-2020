@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "Applitools Hackaton 2020",
   "scripts": {
-    "test:v1": "cross-env APP_VERSION=V1 wdio wdio.conf.js --spec test/TraditionalTestsV1.spec.ts",
+    "test:chrome:laptop:v1": "cross-env APP_VERSION=V1 LAPTOP=true wdio src/resources/config/wdio.chrome.conf.js --spec test/TraditionalTestsV1.spec.ts",
+    "test:chrome:tablet:v1": "cross-env APP_VERSION=V1 TABLET=true wdio src/resources/config/wdio.chrome.conf.js --spec test/TraditionalTestsV1.spec.ts",
+    "test:firefox:laptop:v1": "cross-env APP_VERSION=V1 LAPTOP=true wdio src/resources/config/wdio.firefox.conf.js --spec test/TraditionalTestsV1.spec.ts",
+    "test:firefox:tablet:v1": "cross-env APP_VERSION=V1 TABLET=true wdio src/resources/config/wdio.firefox.conf.js --spec test/TraditionalTestsV1.spec.ts",
+
+    "test:v1": "npm run test:chrome:laptop:v1 && npm run test:chrome:tablet:v1 && npm run test:firefox:laptop:v1 && npm run test:firefox:tablet:v1",
+
     "test:v2": "cross-env APP_VERSION=V2 wdio wdio.conf.js --spec test/TraditionalTestsV2.spec.ts",
     "test:visual:v1": "cross-env APP_VERSION=V1 VISUAL=true wdio wdio.conf.js --spec test/ModernTestsV1.spec.ts",
     "test:visual:v2": "cross-env APP_VERSION=V2 VISUAL=true wdio wdio.conf.js --spec test/ModernTestsV2.spec.ts",
@@ -16,8 +22,10 @@
     "@types/chai": "^4.2.4",
     "@types/mocha": "^5.2.7",
     "@types/node": "^10.17.4",
+    "@wdio/applitools-service": "^5.8.0",
     "@wdio/cli": "^5.16.6",
     "@wdio/local-runner": "^5.16.3",
+    "@wdio/selenium-standalone-service": "^5.13.2",
     "@wdio/mocha-framework": "^5.16.0",
     "@wdio/spec-reporter": "^5.15.2",
     "@wdio/sync": "^5.16.5",
@@ -31,8 +39,6 @@
     "tslint": "^5.20.1",
     "typescript": "^3.7.2",
     "wdio-chromedriver-service": "^5.0.2",
-    "wdio-viewport-size": "^1.0.1",
-    "webdriverio": "^5.16.6",
-    "@wdio/applitools-service": "^5.8.0"
+    "webdriverio": "^5.16.6"
   }
 }
