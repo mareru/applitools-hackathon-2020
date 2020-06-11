@@ -1,6 +1,10 @@
 const path = require('path');
 const timeout = process.env ? 99999999 : 30000;
 
+const isLaptop = process.env.LAPTOP === 'true';
+const isTablet = process.env.TABLET === 'true';
+const isMobile = process.env.MOBILE === 'true';
+
 exports.config = {
   //
   // ====================
@@ -140,8 +144,11 @@ exports.config = {
    * @param {Array.<Object>} capabilities list of capabilities details
    * @param {Array.<String>} specs List of spec file paths that are to be run
    */
-  // beforeSession: function (config, capabilities, specs) {
-  // },
+  beforeSession: function (config, capabilities, specs) {
+    global.isLaptop = isLaptop;
+    global.isTablet = isTablet;
+    global.isMobile = isMobile;
+  },
   /**
    * Gets executed before test execution begins. At this point you can access to all global
    * variables like `browser`. It is the perfect place to define custom commands.
@@ -152,6 +159,7 @@ exports.config = {
     require('ts-node').register({ files: true });
     var chai = require('chai');
     global.assert = chai.assert;
+
     if (process.env.VISUAL === 'true') {
       const { ClassicRunner, Eyes } = require('@applitools/eyes-webdriverio');
       const { Configuration } = require('@applitools/eyes-selenium');
@@ -207,6 +215,20 @@ exports.config = {
       }
     }
     browser.addCommand('setViewportSize', setViewportSize);
+
+    this.setViewportSize();
+  },
+
+  setViewportSize() {
+    if (isLaptop) {
+      browser.setViewportSize(1200, 530);
+    }
+    if (isTablet) {
+      browser.setViewportSize(768, 530);
+    }
+    if(isMobile) {
+      browser.setViewportSize(500, 530);
+    }
   },
 
   // after: function(capabilities, specs) {

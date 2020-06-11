@@ -1,45 +1,30 @@
 import * as fs from 'fs';
 
+declare let isLaptop;
+declare let isTablet;
+declare let  isMobile;
+
 export default class HackathonReporter {
     browser;
     viewport;
     device;
-    isLaptop: boolean;
-    isTablet: boolean;
-    isMobile: boolean;
 
     constructor() {
         this.browser = browser.capabilities.browserName;
-        this.isLaptop = process.env.LAPTOP === 'true';
-        this.isTablet = process.env.TABLET === 'true';
-        this.isMobile = process.env.MOBILE === 'true';
-        this.setViewportSize();
         this.viewport = browser.getViewportSize();
         this.device = this.calculateDeviceName();
-    }
-
-    setViewportSize() {
-        if (this.isLaptop) {
-            browser.setViewportSize(1200, 530);
-        }
-        if (this.isTablet) {
-            browser.setViewportSize(768, 530);
-        }
-        if(this.isMobile) {
-            browser.setViewportSize(500, 530);
-        }
     }
 
     calculateDeviceName() {
         let deviceName: string = 'Unknown';
 
-        if(this.isLaptop) {
+        if(isLaptop) {
             deviceName = 'Laptop';
         }
-        if(this.isTablet) {
+        if(isTablet) {
             deviceName = 'Tablet';
         }
-        if(this.isMobile) {
+        if(isMobile) {
             deviceName = 'Mobile';
         }
         return deviceName;
