@@ -2,7 +2,7 @@ import * as fs from 'fs';
 
 declare let isLaptop;
 declare let isTablet;
-declare let  isMobile;
+declare let isMobile;
 
 export default class HackathonReporter {
     browser;
@@ -18,26 +18,38 @@ export default class HackathonReporter {
     calculateDeviceName() {
         let deviceName: string = 'Unknown';
 
-        if(isLaptop) {
+        if (isLaptop) {
             deviceName = 'Laptop';
         }
-        if(isTablet) {
+        if (isTablet) {
             deviceName = 'Tablet';
         }
-        if(isMobile) {
+        if (isMobile) {
             deviceName = 'Mobile';
         }
         return deviceName;
     }
 
-    writeRecord(task, testName, domId, comparisonResult, assertTrue) {
+    calculateStatus(comparisonResult: boolean, assert: boolean): string {
         let status: string;
-        if (assertTrue) {
+        if (assert) {
             status = comparisonResult ? "Pass" : "Fail";
         } else {
             status = comparisonResult ? "Fail" : "Pass";
         }
-        fs.appendFileSync('Traditional-V1-TestResults.txt', `"Task: ${task}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${this.browser}, Viewport: ${this.viewport.width} x ${this.viewport.height}, Device: ${this.device}, Status: ${status}\n`);
+        return status;
+    }
+
+    calculateFileName(): string {
+        if (process.env.APP_VERSION === 'V1') {
+            return 'Traditional-V1-TestResults.txt';
+        } else {
+            return 'Traditional-V2-TestResults.txt'
+        }
+    }
+
+    writeRecord(task: number, testName: string, domId: string, comparisonResult: boolean, assert: boolean) {
+        fs.appendFileSync(this.calculateFileName(), `"Task: ${task}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${this.browser}, Viewport: ${this.viewport.width} x ${this.viewport.height}, Device: ${this.device}, Status: ${this.calculateStatus(comparisonResult, assert)}\n`);
         return comparisonResult;
     }
 
