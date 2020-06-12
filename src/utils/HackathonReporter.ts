@@ -30,8 +30,14 @@ export default class HackathonReporter {
         return deviceName;
     }
 
-    writeRecord(task, testName, domId, comparisonResult) {
-        fs.appendFileSync('Traditional-V1-TestResults.txt', `"Task: ${task}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${this.browser}, Viewport: ${this.viewport.width} x ${this.viewport.height}, Device: ${this.device}, Status: ${(comparisonResult ? "Pass" : "Fail")}\n`);
+    writeRecord(task, testName, domId, comparisonResult, assertTrue) {
+        let status: string;
+        if (assertTrue) {
+            status = comparisonResult ? "Pass" : "Fail";
+        } else {
+            status = comparisonResult ? "Fail" : "Pass";
+        }
+        fs.appendFileSync('Traditional-V1-TestResults.txt', `"Task: ${task}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${this.browser}, Viewport: ${this.viewport.width} x ${this.viewport.height}, Device: ${this.device}, Status: ${status}\n`);
         return comparisonResult;
     }
 

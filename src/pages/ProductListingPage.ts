@@ -42,39 +42,21 @@ export default class ProductListingPage extends Page {
         return $$('.grid_item');
     }
 
-    get productHeartsList() {
-        return $$('div.grid_item i.ti-heart');
+    get productTileHeartCartControlShuffleIcons() {
+        return $$('.grid_item ul li');
     }
 
-    get controlShuffleList() {
-        return $$('div.grid_item i.ti-control-shuffle');
+    allProductTilesHaveIcons(): boolean {
+        const allIconsDisplayed = this.productTileHeartCartControlShuffleIcons.every(el =>
+            el.isDisplayed()
+        );
+        return allIconsDisplayed;
     }
 
-    get shoppingCartsList() {
-        return $$('div.grid_item i.ti-shopping-cart');
-    }
-
-    allProductsHaveHearts() : boolean {
-        return this.productsList.length === this.productHeartsList.length;
-    }
-
-    allProductsHaveControlShuffles(): boolean {
-        return this.productsList.length === this.controlShuffleList.length;
-    }
-
-    allProductsHaveCarts(): boolean {
-        return  this.productsList.length === this.shoppingCartsList.length;
-    }
-
-    noneOfProductsHaveHearts(): boolean {
-        return this.productHeartsList === undefined || this.productHeartsList.length == 0;
-    }
-
-    noneOfProductsHaveControlShuffles(): boolean {
-        return this.controlShuffleList === undefined || this.controlShuffleList.length == 0;
-    }
-
-    noneOfProductsHaveCarts(): boolean {
-        return this.shoppingCartsList === undefined || this.shoppingCartsList.length == 0;
+    allProductTilesDoNotHaveIcons(): boolean {
+        const allIconsNotDisplayed = this.productTileHeartCartControlShuffleIcons.every(el =>
+            !el.isDisplayed()
+        );
+        return allIconsNotDisplayed;
     }
 }
