@@ -46,6 +46,10 @@ export default class ProductListingPage extends Page {
         return $$('.grid_item ul li');
     }
 
+    get shoppingCartQty() {
+        return $('#STRONG____50');
+    }
+
     allProductTilesHaveIcons(): boolean {
         const allIconsDisplayed = this.productTileHeartCartControlShuffleIcons.every(el =>
             el.isDisplayed()
