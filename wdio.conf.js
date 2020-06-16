@@ -1,4 +1,4 @@
-const path = require('path');
+// const path = require('path');
 const timeout = process.env ? 99999999 : 30000;
 
 const isLaptop = process.env.LAPTOP === 'true';
@@ -87,7 +87,7 @@ exports.config = {
     //
     // Default request retries count
     connectionRetryCount: 3,
-    outputDir: path.join(__dirname, 'logs'),
+    // outputDir: path.join(__dirname, 'logs'),
     //
     // Test runner services
     // Services take over a specific job you don't want to take care of. They enhance
@@ -145,7 +145,6 @@ exports.config = {
         global.isLaptop = isLaptop;
         global.isTablet = isTablet;
         global.isMobile = isMobile;
-        config.enableEyesLogs = true;
     },
     /**
      * Gets executed before test execution begins. At this point you can access to all global
@@ -157,10 +156,6 @@ exports.config = {
         require('ts-node').register({files: true});
         var chai = require('chai');
         global.assert = chai.assert;
-
-        if (process.env.MODERN === 'true') {
-            this.configureApplitools();
-        }
 
         function getViewportSize() {
             return browser.execute(() => {
@@ -177,15 +172,14 @@ exports.config = {
             });
         }
 
-        browser.addCommand('getViewportSize', getViewportSize);
 
         const MAX_RETRIES = 5;
 
         async function setViewportSize(
             width,
             height,
-            retryNo = 0,
-        ) {
+            retryNo = 0)
+        {
             const windowSize = await browser.getWindowSize();
             const viewportSize = await browser.getViewportSize();
 
@@ -206,8 +200,8 @@ exports.config = {
             }
         }
 
+        browser.addCommand('getViewportSize', getViewportSize);
         browser.addCommand('setViewportSize', setViewportSize);
-
         this.setViewportSize();
     },
 
@@ -223,36 +217,6 @@ exports.config = {
         }
     },
 
-    configureApplitools() {
-        const {Eyes,
-            VisualGridRunner,
-            Configuration,
-            BatchInfo,
-            BrowserType,
-            DeviceName,
-            ScreenOrientation} = require('@applitools/eyes-webdriverio');
-
-        global.configuration = new Configuration();
-
-        configuration.setApiKey(process.env.APPLITOOLS_API_KEY);
-        configuration.setAppName('Applitools Hackathon 2020');
-        configuration.setBatch(new BatchInfo('UFG Hackathon'));
-
-        configuration.addBrowser(1200, 700, BrowserType.CHROME);
-        configuration.addBrowser(1200, 700, BrowserType.FIREFOX);
-        configuration.addBrowser(1200, 700, BrowserType.EDGE_CHROMIUM);
-        configuration.addBrowser(768, 700, BrowserType.CHROME);
-        configuration.addBrowser(768, 700, BrowserType.FIREFOX);
-        configuration.addBrowser(768, 700, BrowserType.EDGE_CHROMIUM);
-        configuration.addDeviceEmulation(DeviceName.iPhone_X, ScreenOrientation.PORTRAIT);
-
-        let runner = new VisualGridRunner(10);
-        global.eyes = new Eyes(runner);
-
-        eyes.setConfiguration(configuration);
-
-        eyes.setForceFullPageScreenshot(true);
-    },
     // after: function(capabilities, specs) {
     // },
     /**
@@ -273,11 +237,8 @@ exports.config = {
      * Function to be executed before a test (in Mocha/Jasmine) or a step (in Cucumber) starts.
      * @param {Object} test test details
      */
-    beforeTest: function (test) {
-        if (process.env.MODERN === 'true') {
-            configuration.setTestName(test.fullTitle);
-        }
-    }
+    // beforeTest: function (test) {
+    // }
     /**
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
      * beforeEach in Mocha)
