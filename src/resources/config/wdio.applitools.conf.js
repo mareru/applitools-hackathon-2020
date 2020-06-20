@@ -27,8 +27,7 @@ function beforeSession (config, capabilities, specs) {
 
     const runner = new VisualGridRunner(10);
     global.eyes = new Eyes(runner);
-    // eyes.setLogHandler(new ConsoleLogHandler(true));
-    // eyes.setForceFullPageScreenshot(true);
+   // eyes.setLogHandler(new ConsoleLogHandler(false));
 
     global.configuration = new Configuration();
 
