@@ -15,3 +15,18 @@ describe('Task 1', () => {
         browser.call(() => eyes.abortIfNotClosed());
     });
 });
+
+describe('Task 2', () => {
+    it('Filter Results', () => {
+        let productListingPage = new ProductListingPage();
+        productListingPage.open();
+        productListingPage.filterBlackShoes(true);
+        browser.call(() => eyes.open(browser, configuration.getAppName(), 'Task 2', {width: 800, height: 600}));
+        browser.call(() => eyes.check('Filter Results', Target.region('#product_grid')));
+        browser.call(() => eyes.close());
+    });
+
+    after(() => {
+        browser.call(() => eyes.abortIfNotClosed());
+    });
+});

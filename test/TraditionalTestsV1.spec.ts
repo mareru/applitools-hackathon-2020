@@ -56,7 +56,7 @@ describe('Task 1 - Cross Device Elements Test', () => {
         });
 
         it('All product tiles DO NOT have heart, cart, control shuffle icons displayed', function () {
-            assert.isTrue(reporter.writeRecord(1, this.test!.title, productListingPage.productTileHeartCartControlShuffleIcons.selector, productListingPage.allProductTilesDoNotHaveIcons(), true));
+            assert.isTrue(reporter.writeRecord(1, this.test!.title, productListingPage.productTileHeartCartControlShuffleIcons.selector.toString(), productListingPage.allProductTilesDoNotHaveIcons(), true));
         });
     }
 
@@ -88,7 +88,7 @@ describe('Task 1 - Cross Device Elements Test', () => {
         });
 
         it('All product tiles have heart, cart, control shuffle icons displayed', function () {
-            assert.isTrue(reporter.writeRecord(1, this.test!.title, productListingPage.productTileHeartCartControlShuffleIcons.selector, productListingPage.allProductTilesHaveIcons(), true));
+            assert.isTrue(reporter.writeRecord(1, this.test!.title, productListingPage.productTileHeartCartControlShuffleIcons.selector.toString(), productListingPage.allProductTilesHaveIcons(), true));
         });
     }
 
@@ -115,4 +115,26 @@ describe('Task 1 - Cross Device Elements Test', () => {
             assert.isFalse(reporter.writeRecord(1, this.test!.title, productListingPage.filtersLabel.selector, productListingPage.filtersLabel.isDisplayed(), false));
         });
     }
+});
+
+describe('Task 2 - Filter Results', () => {
+    let reporter;
+
+    beforeEach(() => {
+        new ProductListingPage().open();
+        reporter = new HackathonReporter();
+    });
+
+    const productListingPage = new ProductListingPage();
+
+    it('Black shoes filter results', function () {
+        const numberOfBLackShoes = productListingPage.filterBlackShoes();
+        assert.isTrue(reporter.writeRecord(2, this.test!.title, productListingPage.productsList.selector.toString(), numberOfBLackShoes === 2, true));
+        if(isLaptop) {
+            assert.isTrue(reporter.writeRecord(2, this.test!.title, productListingPage.productTileHeartCartControlShuffleIcons.selector.toString(), productListingPage.allProductTilesDoNotHaveIcons(), true));
+        }
+        if(isMobile || isTablet) {
+            assert.isTrue(reporter.writeRecord(2, this.test!.title, productListingPage.productTileHeartCartControlShuffleIcons.selector.toString(), productListingPage.allProductTilesHaveIcons(), true));
+        }
+    });
 });

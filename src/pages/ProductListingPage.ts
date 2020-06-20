@@ -1,5 +1,8 @@
 import Page from "src/pages/Page";
 
+declare let isTablet;
+declare let isMobile;
+
 export default class ProductListingPage extends Page {
 
     get searchField() {
@@ -50,6 +53,18 @@ export default class ProductListingPage extends Page {
         return $('#STRONG____50');
     }
 
+    get blackFilterLabel() {
+        return $('#LABEL__containerc__104');
+    }
+
+    get filterButton() {
+        return $('#filterBtn');
+    }
+
+    get funnelButton() {
+        return $('.container ul.clearfix .open_filters');
+    }
+
     allProductTilesHaveIcons(): boolean {
         const allIconsDisplayed = this.productTileHeartCartControlShuffleIcons.every(el =>
             el.isDisplayed()
@@ -62,5 +77,25 @@ export default class ProductListingPage extends Page {
             !el.isDisplayed()
         );
         return allIconsNotDisplayed;
+    }
+
+    filterBlackShoes(isApplitoolsTest = false): number {
+        if(isApplitoolsTest) {
+            this.funnelButton.click();
+        } else {
+            if(isTablet || isMobile) {
+                this.funnelButton.click();
+            }
+        }
+
+        this.blackFilterLabel.waitForDisplayed();
+        this.blackFilterLabel.waitForClickable();
+        this.blackFilterLabel.click();
+
+        this.filterButton.waitForDisplayed();
+        this.filterButton.waitForEnabled();
+        this.filterButton.waitForClickable();
+        this.filterButton.click();
+        return this.productsList.length;
     }
 }
