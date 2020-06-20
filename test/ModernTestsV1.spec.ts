@@ -30,3 +30,18 @@ describe('Task 2', () => {
         browser.call(() => eyes.abortIfNotClosed());
     });
 });
+
+describe('Task 3', () => {
+    it('Product Details Test', () => {
+        let productListingPage = new ProductListingPage();
+        productListingPage.open();
+        productListingPage.clickOnFirstProduct();
+        browser.call(() => eyes.open(browser, configuration.getAppName(), 'Task 3', {width: 800, height: 600}));
+        browser.call(() => eyes.check('Product Details Test', Target.window().fully()));
+        browser.call(() => eyes.close());
+    });
+
+    after(() => {
+        browser.call(() => eyes.abortIfNotClosed());
+    });
+});

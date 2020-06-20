@@ -65,6 +65,10 @@ export default class ProductListingPage extends Page {
         return $('.container ul.clearfix .open_filters');
     }
 
+    get firstProductLink() {
+        return $('#product_1');
+    }
+
     allProductTilesHaveIcons(): boolean {
         const allIconsDisplayed = this.productTileHeartCartControlShuffleIcons.every(el =>
             el.isDisplayed()
@@ -97,5 +101,9 @@ export default class ProductListingPage extends Page {
         this.filterButton.waitForClickable();
         this.filterButton.click();
         return this.productsList.length;
+    }
+
+    clickOnFirstProduct(): void {
+        this.firstProductLink.click();
     }
 }

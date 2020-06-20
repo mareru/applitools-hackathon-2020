@@ -138,3 +138,20 @@ describe('Task 2 - Filter Results', () => {
         }
     });
 });
+
+describe('Task 3 - Product Details Test', () => {
+    let reporter;
+
+    beforeEach(() => {
+        new ProductListingPage().open();
+        reporter = new HackathonReporter();
+    });
+
+    const productListingPage = new ProductListingPage();
+
+    it('Product Details Test', function () {
+        productListingPage.clickOnFirstProduct();
+
+
+    });
+});
