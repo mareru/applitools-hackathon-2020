@@ -163,26 +163,74 @@ describe('Task 3 - Product Details Test', () => {
     // alignment of top user icon, heart icon and basket icon
 
     it('Product image is displayed', function () {
-        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.productImage.selector, productDetailPage.productImageDisplayed(), true));
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.productImage.selector, productDetailPage.isProductImageDisplayed(), true));
     });
 
     it('Product SKU is displayed', function () {
-        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.productSKULabel.selector, productDetailPage.productSKULabelDisplayed(), true));
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.productSKULabel.selector, productDetailPage.isProductSKULabelDisplayed(), true));
+    });
+
+    it('Product SKU value is MTKRY-001', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.productSKULabel.selector, productDetailPage.checkProductSKU('SKU: MTKRY-001'), true));
     });
 
     it('Product size is small', function () {
-        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.productSize.selector, productDetailPage.isProductSizeSmall(), true));
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.productSize.selector, productDetailPage.checkProductSize('Small (S)'), true));
     });
 
-    it('Product price with discount is correct', function () {
-        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.priceWithDiscount.selector, productDetailPage.isPriceWithDiscountCorrect(), true));
+    it('Product price with discount is displayed', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.priceWithDiscount.selector, productDetailPage.priceWithDiscount.isDisplayed(), true));
     });
 
-    it('Product price without discount is correct', function () {
-        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.priceWithoutDiscount.selector, productDetailPage.isPriceWithoutDiscountCorrect(), true));
+    it('Product price with discount is $33.00', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.priceWithDiscount.selector, productDetailPage.checkPriceWithDiscount('$33.00'), true));
+    });
+
+    it('Product price without discount is displayed', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.priceWithoutDiscount.selector, productDetailPage.priceWithoutDiscount.isDisplayed(), true));
+    });
+
+    it('Product price without discount is $48.00', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.priceWithoutDiscount.selector, productDetailPage.checkPriceWithoutDiscount('$48.00'), true));
+    });
+
+    it('Product price without discount is displayed in grey colour', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.priceWithoutDiscount.selector, productDetailPage.isColorOfPriceWithoutDiscountGray(), true));
+    });
+
+    it('Product price without discount is strikethrough', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.priceWithoutDiscount.selector, productDetailPage.isPriceWithoutDiscountStrikethrough(), true));
+    });
+
+    it('Product discount is displayed', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.discount.selector, productDetailPage.discount.isDisplayed(), true));
     });
 
     it('Product discount is correct', function () {
-        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.discount.selector, productDetailPage.isDiscountCorrect(), true));
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.discount.selector, productDetailPage.checkDiscount('-30% discount'), true));
+    });
+
+    it('Product review stars are displayed', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.stars.selector.toString(), productDetailPage.isReviewStarsDisplayed(), true));
+    });
+
+    it('Product rating is 4 stars', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.stars.selector.toString(), productDetailPage.checkRating(4), true));
+    });
+
+    it('Product number of reviews label is displayed', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.nmbrOfReviewsLabel.selector, productDetailPage.nmbrOfReviewsLabel.isDisplayed(), true));
+    });
+
+    it('Product number of reviews label displays 4 reviews', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.nmbrOfReviewsLabel.selector, productDetailPage.checkNumberOfReviewsLabel('4 reviews'), true));
+    });
+
+    it('Product title is displayed', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.title.selector, productDetailPage.title.isDisplayed(), true));
+    });
+
+    it('Product title is Appli Air x Night', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.title.selector, productDetailPage.checkTitle('Appli Air x Night'), true));
     });
 });

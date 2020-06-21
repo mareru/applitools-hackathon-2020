@@ -26,40 +26,92 @@ export default class ProductDetailPage extends Page {
         return $('#discount');
     }
 
-    productImageDisplayed(): boolean {
+    get stars() {
+        return $$('#SPAN__rating__76 .icon-star');
+    }
+
+    get nmbrOfReviewsLabel() {
+        return $('#SPAN__rating__76 em');
+    }
+
+    get title() {
+        return $('#shoe_name');
+    }
+
+    isProductImageDisplayed(): boolean {
         // this will catch if a image is displayed on Product Detail Page,
         // but will not detect if the correct image is displayed for the product
         const styleAttribute = this.productImage.getAttribute('style');
         return styleAttribute !== null && styleAttribute !== undefined;
     }
 
-    productSKULabelDisplayed(): boolean {
-        const colorParsed = this.productSKULabel.getCSSProperty('color').parsed;
+    isProductSKULabelDisplayed(): boolean {
+        let productSKULabel = this.productSKULabel;
+        const colorParsed = productSKULabel.getCSSProperty('color').parsed;
         const color = colorParsed ? colorParsed.hex : '';
         const whiteColor = color === '#ffffff';
-        return this.productSKULabel.isDisplayed() && !whiteColor;
+        return productSKULabel.isDisplayed() && !whiteColor;
     }
 
-    isProductSizeSmall(): boolean {
-        return this.productSize.getText() === 'Small (S)';
+    checkProductSKU(text: string): boolean {
+        return this.isProductSKULabelDisplayed() && this.productSKULabel.getText() === text;
     }
 
-    isPriceWithDiscountCorrect(): boolean {
-        return this.priceWithDiscount.getText() === '$33.00';
+    checkProductSize(text: string): boolean {
+        let productSize = this.productSize;
+        return this.productSize.isDisplayed() && productSize.getText() === text;
     }
 
-    isPriceWithoutDiscountCorrect(): boolean {
+    checkPriceWithDiscount(text: string): boolean {
+        let priceWithDiscount = this.priceWithDiscount;
+        return priceWithDiscount.isDisplayed() && priceWithDiscount.getText() === text;
+    }
+
+    checkPriceWithoutDiscount(text: string): boolean {
+        let priceWithoutDiscount = this.priceWithoutDiscount;
+        return priceWithoutDiscount.isDisplayed() && priceWithoutDiscount.getText() === text;
+    }
+
+    isColorOfPriceWithoutDiscountGray(): boolean {
         const colorParsed = this.priceWithoutDiscount.getCSSProperty('color').parsed;
         const color = colorParsed ? colorParsed.hex : '';
-        const greyColor = color === '#999999';
-
-        const textDecoration =  this.priceWithoutDiscount.getCSSProperty('text-decoration').value;
-        const strikethrough = textDecoration.includes('line-through');
-
-        return this.priceWithoutDiscount.getText() === '$48.00' && greyColor && strikethrough;
+        return color === '#999999';
     }
 
-    isDiscountCorrect(): boolean {
-        return this.discount.getText() === '-30% discount';
+    isPriceWithoutDiscountStrikethrough(): boolean {
+        const textDecoration =  this.priceWithoutDiscount.getCSSProperty('text-decoration').value;
+        return textDecoration.includes('line-through');
+    }
+
+    checkDiscount(discountText: string): boolean {
+        let discount = this.discount;
+        return discount.isDisplayed() && discount.getText() === discountText;
+    }
+
+    isReviewStarsDisplayed(): boolean {
+        return this.stars.length === 5 && this.allStarsDisplayed(this.stars);
+    }
+
+    checkRating(rating: number) : boolean {
+        return this.calculateRating(this.stars) === rating;
+    }
+
+    allStarsDisplayed(stars: WebdriverIO.ElementArray): boolean {
+        const nmbrOfDisplayedStars = stars.filter(star => star.isDisplayed()).length;
+        return nmbrOfDisplayedStars === 5;
+    }
+
+    calculateRating(stars: WebdriverIO.ElementArray): number {
+        return stars.filter(star => star.getAttribute('class').includes('voted')).length;
+    }
+
+    checkNumberOfReviewsLabel(text: string) {
+        let nmbrOfReviewsLabel = this.nmbrOfReviewsLabel;
+        return nmbrOfReviewsLabel.isDisplayed() && nmbrOfReviewsLabel.getText() === text;
+    }
+
+    checkTitle(title: string): boolean {
+        let titleElem = this.title;
+        return titleElem.isDisplayed() && titleElem.getText() === title;
     }
 }
