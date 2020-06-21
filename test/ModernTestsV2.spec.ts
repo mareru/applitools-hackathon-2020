@@ -1,5 +1,5 @@
 import { Target } from '@applitools/eyes-webdriverio';
-import ProductListingPage from "src/pages/ProductListingPage";
+import ProductListingPage from 'src/pages/ProductListingPage';
 declare let eyes: any;
 declare let configuration: any;
 
@@ -18,7 +18,7 @@ describe('Task 1', () => {
 
 describe('Task 2', () => {
     it('Filter Results', () => {
-        let productListingPage = new ProductListingPage();
+        const productListingPage = new ProductListingPage();
         productListingPage.open();
         productListingPage.filterBlackShoes(true);
         browser.call(() => eyes.open(browser, configuration.getAppName(), 'Task 2', {width: 800, height: 600}));
@@ -33,7 +33,7 @@ describe('Task 2', () => {
 
 describe('Task 3', () => {
     it('Product Details Test', () => {
-        let productListingPage = new ProductListingPage();
+        const productListingPage = new ProductListingPage();
         productListingPage.open();
         productListingPage.clickOnFirstProduct();
         browser.call(() => eyes.open(browser, configuration.getAppName(), 'Task 3', {width: 800, height: 600}));

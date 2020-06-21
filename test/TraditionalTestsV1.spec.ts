@@ -1,6 +1,6 @@
-import ProductListingPage from "src/pages/ProductListingPage";
-import HackathonReporter from "src/utils/HackathonReporter";
-import ProductDetailPage from "src/pages/ProductDetailPage";
+import ProductDetailPage from 'src/pages/ProductDetailPage';
+import ProductListingPage from 'src/pages/ProductListingPage';
+import HackathonReporter from 'src/utils/HackathonReporter';
 
 declare let assert;
 declare let isLaptop;
@@ -139,13 +139,13 @@ describe('Task 2 - Filter Results', () => {
         assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productListingPage.productsList.selector.toString(), numberOfBLackShoes === 2, true));
     });
 
-    if(isLaptop) {
+    if (isLaptop) {
         it('Black shoes filter results, all product tiles DO NOT have heart, cart, control shuffle icons displayed', function () {
             productListingPage.filterBlackShoes();
             assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productListingPage.productTileHeartCartControlShuffleIcons.selector.toString(), productListingPage.allProductTilesDoNotHaveIcons(), true));
         });
     }
-    if(isMobile || isTablet) {
+    if (isMobile || isTablet) {
         it('Black shoes filter results, all product tiles have heart, cart, control shuffle icons displayed', function () {
             productListingPage.filterBlackShoes();
             assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productListingPage.productTileHeartCartControlShuffleIcons.selector.toString(), productListingPage.allProductTilesHaveIcons(), true));
