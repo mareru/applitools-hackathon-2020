@@ -69,6 +69,10 @@ export default class ProductListingPage extends Page {
         return $('#product_1');
     }
 
+    get footerItems() {
+        return $$('footer h3');
+    }
+
     open() {
         super.open();
         return this;
@@ -86,6 +90,11 @@ export default class ProductListingPage extends Page {
             !el.isDisplayed()
         );
         return allIconsNotDisplayed;
+    }
+
+    allFooterItemsAreCollapsed(): boolean {
+        const nmbrOfCollapsedItems = this.footerItems.filter(item => item.getAttribute('aria-expanded') === null).length;
+        return nmbrOfCollapsedItems === this.footerItems.length;
     }
 
     filterBlackShoes(isApplitoolsTest = false): number {

@@ -34,6 +34,10 @@ describe('Task 1 - Cross Device Elements Test', () => {
         it('Shopping cart quantity NOT displayed', function () {
             assert.isFalse(reporter.writeRecord(taskNumber, this.test!.title, productListingPage.shoppingCartQty.selector, productListingPage.shoppingCartQty.isDisplayed(), false));
         });
+
+        it('All footer items are collapsed', function () {
+            assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productListingPage.footerItems.selector.toString(), productListingPage.allFooterItemsAreCollapsed(), true));
+        });
     }
 
     if (isLaptop) {
