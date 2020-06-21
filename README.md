@@ -16,9 +16,9 @@ Traditional script results ran against version 1 of the app are [Traditional-V1-
 
 Traditional script results ran against version 2 of the app are [Traditional-V2-TestResults.txt](/Traditional-V2-TestResults.txt).  
 
-Modern script results ran against version 1 of the app are [here](https://eyes.applitools.com/app/test-results/00000251809542730847) in my Applitools Dashboard app.
+Modern script results ran against version 1 of the app are [here > Eyes Batch Results](https://eyes.applitools.com/app/test-results/00000251809542730847) in my Applitools Dashboard app.
 
-Modern script results ran against version 2 of the app are [here](https://eyes.applitools.com/app/test-results/00000251809542431441) in my Applittols Dashboard app.
+Modern script results ran against version 2 of the app are [here > Eyes Batch Results](https://eyes.applitools.com/app/test-results/00000251809542431441) in my Applittols Dashboard app.
 
 ## Requirements
 
