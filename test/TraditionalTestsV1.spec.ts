@@ -143,7 +143,7 @@ describe('Task 2 - Filter Results', () => {
     });
 });
 
-describe.only('Task 3 - Product Details Test', () => {
+describe('Task 3 - Product Details Test', () => {
     let reporter;
 
     beforeEach(() => {
@@ -168,15 +168,15 @@ describe.only('Task 3 - Product Details Test', () => {
         assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.productSize.selector, productDetailPage.isProductSizeSmall(), true));
     });
 
-    it.only('Product price with discount is correct', function () {
+    it('Product price with discount is correct', function () {
         assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.priceWithDiscount.selector, productDetailPage.isPriceWithDiscountCorrect(), true));
     });
 
-    it.only('Product price without discount is correct', function () {
+    it('Product price without discount is correct', function () {
         assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.priceWithoutDiscount.selector, productDetailPage.isPriceWithoutDiscountCorrect(), true));
     });
 
-    it.only('Product discount is correct', function () {
+    it('Product discount is correct', function () {
         assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.discount.selector, productDetailPage.isDiscountCorrect(), true));
     });
 });

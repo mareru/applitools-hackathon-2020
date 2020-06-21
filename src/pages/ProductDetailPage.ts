@@ -49,7 +49,14 @@ export default class ProductDetailPage extends Page {
     }
 
     isPriceWithoutDiscountCorrect(): boolean {
-        return this.priceWithoutDiscount.getText() === '$48.00';
+        const colorParsed = this.priceWithoutDiscount.getCSSProperty('color').parsed;
+        const color = colorParsed ? colorParsed.hex : '';
+        const greyColor = color === '#999999';
+
+        const textDecoration =  this.priceWithoutDiscount.getCSSProperty('text-decoration').value;
+        const strikethrough = textDecoration.includes('line-through');
+
+        return this.priceWithoutDiscount.getText() === '$48.00' && greyColor && strikethrough;
     }
 
     isDiscountCorrect(): boolean {
