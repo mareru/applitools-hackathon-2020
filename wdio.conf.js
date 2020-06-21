@@ -96,7 +96,7 @@ exports.config = {
     services: ['selenium-standalone'],
     seleniumArgs: {
         javaArgs: [
-            '-Dwebdriver.edge.driver=C:\\edge-driver\\msedgedriver.exe'
+            '-Dwebdriver.edge.driver=.\\src\\resources\\edge-driver\\msedgedriver.exe'
         ]
     },
     // Framework you want to run your specs with.
