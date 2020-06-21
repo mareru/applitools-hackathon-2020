@@ -69,6 +69,11 @@ export default class ProductListingPage extends Page {
         return $('#product_1');
     }
 
+    open() {
+        super.open();
+        return this;
+    }
+
     allProductTilesHaveIcons(): boolean {
         const allIconsDisplayed = this.productTileHeartCartControlShuffleIcons.every(el =>
             el.isDisplayed()
