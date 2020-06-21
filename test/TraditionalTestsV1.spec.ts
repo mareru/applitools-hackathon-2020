@@ -156,6 +156,12 @@ describe('Task 3 - Product Details Test', () => {
     const productDetailPage = new ProductDetailPage();
     const taskNumber = 3;
 
+    // NOTE:
+    // could not do in traditional way checks of elements alignments
+    // e.g. alignment of "Add to Cart" button,
+    // alignment of reviews stars and reviews text,
+    // alignment of top user icon, heart icon and basket icon
+
     it('Product image is displayed', function () {
         assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.productImage.selector, productDetailPage.productImageDisplayed(), true));
     });
