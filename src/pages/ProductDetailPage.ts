@@ -38,19 +38,41 @@ export default class ProductDetailPage extends Page {
         return $('#shoe_name');
     }
 
+    get addToCartButton() {
+        return $('#A__btn__114');
+    }
+
+    get qtyField() {
+        return $('#DIV__numbersrow__102');
+    }
+
+    get qtyFieldValue() {
+        return $('#quantity_1');
+    }
+
+    get qtyMinusButton() {
+        return $('#DIV__decbuttoni__105');
+    }
+
+    get qtyPlusButton() {
+        return $('#DIV__incbuttoni__104');
+    }
+
+    get productDescription() {
+        return $('#P____83');
+    }
+
     isProductImageDisplayed(): boolean {
         // this will catch if a image is displayed on Product Detail Page,
         // but will not detect if the correct image is displayed for the product
         const styleAttribute = this.productImage.getAttribute('style');
-        return styleAttribute !== null && styleAttribute !== undefined;
+        return styleAttribute !== undefined && styleAttribute !== null && styleAttribute.includes('background-image');
     }
 
     isProductSKULabelDisplayed(): boolean {
+        const black = '#444444';
         let productSKULabel = this.productSKULabel;
-        const colorParsed = productSKULabel.getCSSProperty('color').parsed;
-        const color = colorParsed ? colorParsed.hex : '';
-        const whiteColor = color === '#ffffff';
-        return productSKULabel.isDisplayed() && !whiteColor;
+        return productSKULabel.isDisplayed() && this.checkColor(productSKULabel, black);
     }
 
     checkProductSKU(text: string): boolean {
@@ -67,15 +89,19 @@ export default class ProductDetailPage extends Page {
         return priceWithDiscount.isDisplayed() && priceWithDiscount.getText() === text;
     }
 
+    isColorOfPriceWithDiscountBlue(): boolean {
+        const blue = '#004dda';
+        return this.checkColor(this.priceWithDiscount, blue);
+    }
+
     checkPriceWithoutDiscount(text: string): boolean {
         let priceWithoutDiscount = this.priceWithoutDiscount;
         return priceWithoutDiscount.isDisplayed() && priceWithoutDiscount.getText() === text;
     }
 
     isColorOfPriceWithoutDiscountGray(): boolean {
-        const colorParsed = this.priceWithoutDiscount.getCSSProperty('color').parsed;
-        const color = colorParsed ? colorParsed.hex : '';
-        return color === '#999999';
+        const grey = '#999999';
+        return this.checkColor(this.priceWithoutDiscount, grey);
     }
 
     isPriceWithoutDiscountStrikethrough(): boolean {
@@ -96,6 +122,25 @@ export default class ProductDetailPage extends Page {
         return this.calculateRating(this.stars) === rating;
     }
 
+    checkNumberOfReviewsLabel(text: string) {
+        let nmbrOfReviewsLabel = this.nmbrOfReviewsLabel;
+        return nmbrOfReviewsLabel.isDisplayed() && nmbrOfReviewsLabel.getText() === text;
+    }
+
+    checkTitle(title: string): boolean {
+        let titleElem = this.title;
+        return titleElem.isDisplayed() && titleElem.getText() === title;
+    }
+
+    checkQtyFieldValue(qty: string): boolean {
+        return this.qtyFieldValue.getValue() === qty;
+    }
+
+    checkProductDescriptionText(): boolean {
+        const text = this.productSKULabel.getText() + '\nThese boots are comfortable enough to wear all day. Well made. I love the “look”. Best Used For Casual Everyday Walk fearlessly into the cooler months in the Sorel Joan Of Arctic Wedge II Chelsea Boot. Boasting the iconic wedge platform that\'s as comfortable as it is stylish, this boot features a waterproof upper';
+        return this.productDescription.getText() === text;
+    }
+
     allStarsDisplayed(stars: WebdriverIO.ElementArray): boolean {
         const nmbrOfDisplayedStars = stars.filter(star => star.isDisplayed()).length;
         return nmbrOfDisplayedStars === 5;
@@ -105,13 +150,9 @@ export default class ProductDetailPage extends Page {
         return stars.filter(star => star.getAttribute('class').includes('voted')).length;
     }
 
-    checkNumberOfReviewsLabel(text: string) {
-        let nmbrOfReviewsLabel = this.nmbrOfReviewsLabel;
-        return nmbrOfReviewsLabel.isDisplayed() && nmbrOfReviewsLabel.getText() === text;
-    }
-
-    checkTitle(title: string): boolean {
-        let titleElem = this.title;
-        return titleElem.isDisplayed() && titleElem.getText() === title;
+    checkColor(element: WebdriverIO.Element, colorHex: string): boolean {
+        const colorParsed = element.getCSSProperty('color').parsed;
+        const color = colorParsed ? colorParsed.hex : '';
+        return color === colorHex;
     }
 }

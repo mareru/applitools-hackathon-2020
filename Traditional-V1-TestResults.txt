@@ -1,0 +1,273 @@
+"Task: 1, Test Name: Main menu displayed, DOM Id: #DIV__mainmenu__15, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Wishlist icon displayed, DOM Id: #A__wishlist__52, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Filters displayed, DOM Id: #filter_col, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Grid view icon displayed, DOM Id: i.ti-view-grid, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: List view icon displayed, DOM Id: i.ti-view-list, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: All product tiles DO NOT have heart, cart, control shuffle icons displayed, DOM Id: .grid_item ul li, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Search field displayed, DOM Id: #INPUTtext____42, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Search icon displayed, DOM Id: #I__headericon__44, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Magnifying glass icon NOT displayed, DOM Id: a.btn_search_mob, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Shopping cart quantity displayed, DOM Id: #STRONG____50, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Filters label NOT displayed, DOM Id: a.open_filters span, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 2, Test Name: Black shoes filter results have 2 products, DOM Id: .grid_item, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 2, Test Name: Black shoes filter results, all product tiles DO NOT have heart, cart, control shuffle icons displayed, DOM Id: .grid_item ul li, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product image is displayed, DOM Id: #shoe_img, Browser: chrome, Viewport: 1200 x 575, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product SKU is displayed, DOM Id: #SMALL____84, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product SKU value is MTKRY-001, DOM Id: #SMALL____84, Browser: chrome, Viewport: 1200 x 575, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product size is small, DOM Id: .nice-select .current, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product price with discount is displayed, DOM Id: #new_price, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product price with discount is $33.00, DOM Id: #new_price, Browser: chrome, Viewport: 1200 x 575, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product price with discount is displayed in blue color, DOM Id: #new_price, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product price without discount is displayed, DOM Id: #old_price, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product price without discount is $48.00, DOM Id: #old_price, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product price without discount is displayed in grey colour, DOM Id: #old_price, Browser: chrome, Viewport: 1200 x 575, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product price without discount is strikethrough, DOM Id: #old_price, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product discount is displayed, DOM Id: #discount, Browser: chrome, Viewport: 1200 x 575, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product discount is correct, DOM Id: #discount, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product review stars are displayed, DOM Id: #SPAN__rating__76 .icon-star, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product rating is 4 stars, DOM Id: #SPAN__rating__76 .icon-star, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product number of reviews label is displayed, DOM Id: #SPAN__rating__76 em, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product number of reviews label displays 4 reviews, DOM Id: #SPAN__rating__76 em, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product title is displayed, DOM Id: #shoe_name, Browser: chrome, Viewport: 1200 x 575, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product title is Appli Air x Night, DOM Id: #shoe_name, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Add to cart button is displayed, DOM Id: #A__btn__114, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Quantity field is displayed, DOM Id: #DIV__numbersrow__102, Browser: chrome, Viewport: 1200 x 575, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Quantity field default value is 1, DOM Id: #quantity_1, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Quantity field minus button is displayed, DOM Id: #DIV__decbuttoni__105, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Quantity field plus button is displayed, DOM Id: #DIV__incbuttoni__104, Browser: chrome, Viewport: 1200 x 575, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product description is displayed, DOM Id: #P____83, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product description text is correct, DOM Id: #P____83, Browser: chrome, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Filters label displayed, DOM Id: a.open_filters span, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Main menu NOT displayed, DOM Id: #DIV__mainmenu__15, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Wishlist icon NOT displayed, DOM Id: #A__wishlist__52, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Filters NOT displayed, DOM Id: #filter_col, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Grid view icon NOT displayed, DOM Id: i.ti-view-grid, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 1, Test Name: List view icon NOT displayed, DOM Id: i.ti-view-list, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 1, Test Name: All product tiles have heart, cart, control shuffle icons displayed, DOM Id: .grid_item ul li, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Search field displayed, DOM Id: #INPUTtext____42, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Search icon displayed, DOM Id: #I__headericon__44, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Magnifying glass icon NOT displayed, DOM Id: a.btn_search_mob, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Shopping cart quantity displayed, DOM Id: #STRONG____50, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 2, Test Name: Black shoes filter results have 2 products, DOM Id: .grid_item, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 2, Test Name: Black shoes filter results, all product tiles have heart, cart, control shuffle icons displayed, DOM Id: .grid_item ul li, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product image is displayed, DOM Id: #shoe_img, Browser: chrome, Viewport: 768 x 575, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product SKU is displayed, DOM Id: #SMALL____84, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product SKU value is MTKRY-001, DOM Id: #SMALL____84, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product size is small, DOM Id: .nice-select .current, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product price with discount is displayed, DOM Id: #new_price, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product price with discount is $33.00, DOM Id: #new_price, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product price with discount is displayed in blue color, DOM Id: #new_price, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product price without discount is displayed, DOM Id: #old_price, Browser: chrome, Viewport: 768 x 575, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product price without discount is $48.00, DOM Id: #old_price, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product price without discount is displayed in grey colour, DOM Id: #old_price, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product price without discount is strikethrough, DOM Id: #old_price, Browser: chrome, Viewport: 768 x 575, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product discount is displayed, DOM Id: #discount, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product discount is correct, DOM Id: #discount, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product review stars are displayed, DOM Id: #SPAN__rating__76 .icon-star, Browser: chrome, Viewport: 768 x 575, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product rating is 4 stars, DOM Id: #SPAN__rating__76 .icon-star, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product number of reviews label is displayed, DOM Id: #SPAN__rating__76 em, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product number of reviews label displays 4 reviews, DOM Id: #SPAN__rating__76 em, Browser: chrome, Viewport: 768 x 575, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product title is displayed, DOM Id: #shoe_name, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product title is Appli Air x Night, DOM Id: #shoe_name, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Add to cart button is displayed, DOM Id: #A__btn__114, Browser: chrome, Viewport: 768 x 575, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Quantity field is displayed, DOM Id: #DIV__numbersrow__102, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Quantity field default value is 1, DOM Id: #quantity_1, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Quantity field minus button is displayed, DOM Id: #DIV__decbuttoni__105, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Quantity field plus button is displayed, DOM Id: #DIV__incbuttoni__104, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product description is displayed, DOM Id: #P____83, Browser: chrome, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product description text is correct, DOM Id: #P____83, Browser: chrome, Viewport: 768 x 575, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Main menu displayed, DOM Id: #DIV__mainmenu__15, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Wishlist icon displayed, DOM Id: #A__wishlist__52, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Filters displayed, DOM Id: #filter_col, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Grid view icon displayed, DOM Id: i.ti-view-grid, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 1, Test Name: List view icon displayed, DOM Id: i.ti-view-list, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 1, Test Name: All product tiles DO NOT have heart, cart, control shuffle icons displayed, DOM Id: .grid_item ul li, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Search field displayed, DOM Id: #INPUTtext____42, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Search icon displayed, DOM Id: #I__headericon__44, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Magnifying glass icon NOT displayed, DOM Id: a.btn_search_mob, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Shopping cart quantity displayed, DOM Id: #STRONG____50, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Filters label NOT displayed, DOM Id: a.open_filters span, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 2, Test Name: Black shoes filter results have 2 products, DOM Id: .grid_item, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 2, Test Name: Black shoes filter results, all product tiles DO NOT have heart, cart, control shuffle icons displayed, DOM Id: .grid_item ul li, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product image is displayed, DOM Id: #shoe_img, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product SKU is displayed, DOM Id: #SMALL____84, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product SKU value is MTKRY-001, DOM Id: #SMALL____84, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product size is small, DOM Id: .nice-select .current, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product price with discount is displayed, DOM Id: #new_price, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product price with discount is $33.00, DOM Id: #new_price, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product price with discount is displayed in blue color, DOM Id: #new_price, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product price without discount is displayed, DOM Id: #old_price, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product price without discount is $48.00, DOM Id: #old_price, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product price without discount is displayed in grey colour, DOM Id: #old_price, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product price without discount is strikethrough, DOM Id: #old_price, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product discount is displayed, DOM Id: #discount, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product discount is correct, DOM Id: #discount, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product review stars are displayed, DOM Id: #SPAN__rating__76 .icon-star, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product rating is 4 stars, DOM Id: #SPAN__rating__76 .icon-star, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product number of reviews label is displayed, DOM Id: #SPAN__rating__76 em, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product number of reviews label displays 4 reviews, DOM Id: #SPAN__rating__76 em, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product title is displayed, DOM Id: #shoe_name, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product title is Appli Air x Night, DOM Id: #shoe_name, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Add to cart button is displayed, DOM Id: #A__btn__114, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Quantity field is displayed, DOM Id: #DIV__numbersrow__102, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Quantity field default value is 1, DOM Id: #quantity_1, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Quantity field minus button is displayed, DOM Id: #DIV__decbuttoni__105, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Quantity field plus button is displayed, DOM Id: #DIV__incbuttoni__104, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product description is displayed, DOM Id: #P____83, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product description text is correct, DOM Id: #P____83, Browser: firefox, Viewport: 1200 x 530, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Filters label displayed, DOM Id: a.open_filters span, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Main menu NOT displayed, DOM Id: #DIV__mainmenu__15, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Wishlist icon NOT displayed, DOM Id: #A__wishlist__52, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Filters NOT displayed, DOM Id: #filter_col, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Grid view icon NOT displayed, DOM Id: i.ti-view-grid, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 1, Test Name: List view icon NOT displayed, DOM Id: i.ti-view-list, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 1, Test Name: All product tiles have heart, cart, control shuffle icons displayed, DOM Id: .grid_item ul li, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Search field displayed, DOM Id: #INPUTtext____42, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Search icon displayed, DOM Id: #I__headericon__44, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Magnifying glass icon NOT displayed, DOM Id: a.btn_search_mob, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Shopping cart quantity displayed, DOM Id: #STRONG____50, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 2, Test Name: Black shoes filter results have 2 products, DOM Id: .grid_item, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 2, Test Name: Black shoes filter results, all product tiles have heart, cart, control shuffle icons displayed, DOM Id: .grid_item ul li, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product image is displayed, DOM Id: #shoe_img, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product SKU is displayed, DOM Id: #SMALL____84, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product SKU value is MTKRY-001, DOM Id: #SMALL____84, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product size is small, DOM Id: .nice-select .current, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product price with discount is displayed, DOM Id: #new_price, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product price with discount is $33.00, DOM Id: #new_price, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product price with discount is displayed in blue color, DOM Id: #new_price, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product price without discount is displayed, DOM Id: #old_price, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product price without discount is $48.00, DOM Id: #old_price, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product price without discount is displayed in grey colour, DOM Id: #old_price, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product price without discount is strikethrough, DOM Id: #old_price, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product discount is displayed, DOM Id: #discount, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product discount is correct, DOM Id: #discount, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product review stars are displayed, DOM Id: #SPAN__rating__76 .icon-star, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product rating is 4 stars, DOM Id: #SPAN__rating__76 .icon-star, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product number of reviews label is displayed, DOM Id: #SPAN__rating__76 em, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product number of reviews label displays 4 reviews, DOM Id: #SPAN__rating__76 em, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product title is displayed, DOM Id: #shoe_name, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product title is Appli Air x Night, DOM Id: #shoe_name, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Add to cart button is displayed, DOM Id: #A__btn__114, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Quantity field is displayed, DOM Id: #DIV__numbersrow__102, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Quantity field default value is 1, DOM Id: #quantity_1, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Quantity field minus button is displayed, DOM Id: #DIV__decbuttoni__105, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Quantity field plus button is displayed, DOM Id: #DIV__incbuttoni__104, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product description is displayed, DOM Id: #P____83, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product description text is correct, DOM Id: #P____83, Browser: firefox, Viewport: 768 x 530, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Main menu displayed, DOM Id: #DIV__mainmenu__15, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Wishlist icon displayed, DOM Id: #A__wishlist__52, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Filters displayed, DOM Id: #filter_col, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Grid view icon displayed, DOM Id: i.ti-view-grid, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: List view icon displayed, DOM Id: i.ti-view-list, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: All product tiles DO NOT have heart, cart, control shuffle icons displayed, DOM Id: .grid_item ul li, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Search field displayed, DOM Id: #INPUTtext____42, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Search icon displayed, DOM Id: #I__headericon__44, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Magnifying glass icon NOT displayed, DOM Id: a.btn_search_mob, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Shopping cart quantity displayed, DOM Id: #STRONG____50, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Filters label NOT displayed, DOM Id: a.open_filters span, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 2, Test Name: Black shoes filter results have 2 products, DOM Id: .grid_item, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 2, Test Name: Black shoes filter results, all product tiles DO NOT have heart, cart, control shuffle icons displayed, DOM Id: .grid_item ul li, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product image is displayed, DOM Id: #shoe_img, Browser: msedge, Viewport: 1200 x 574, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product SKU is displayed, DOM Id: #SMALL____84, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product SKU value is MTKRY-001, DOM Id: #SMALL____84, Browser: msedge, Viewport: 1200 x 574, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product size is small, DOM Id: .nice-select .current, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product price with discount is displayed, DOM Id: #new_price, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product price with discount is $33.00, DOM Id: #new_price, Browser: msedge, Viewport: 1200 x 574, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product price with discount is displayed in blue color, DOM Id: #new_price, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product price without discount is displayed, DOM Id: #old_price, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product price without discount is $48.00, DOM Id: #old_price, Browser: msedge, Viewport: 1200 x 574, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product price without discount is displayed in grey colour, DOM Id: #old_price, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product price without discount is strikethrough, DOM Id: #old_price, Browser: msedge, Viewport: 1200 x 574, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product discount is displayed, DOM Id: #discount, Browser: msedge, Viewport: 1200 x 574, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product discount is correct, DOM Id: #discount, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product review stars are displayed, DOM Id: #SPAN__rating__76 .icon-star, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product rating is 4 stars, DOM Id: #SPAN__rating__76 .icon-star, Browser: msedge, Viewport: 1200 x 574, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product number of reviews label is displayed, DOM Id: #SPAN__rating__76 em, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product number of reviews label displays 4 reviews, DOM Id: #SPAN__rating__76 em, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product title is displayed, DOM Id: #shoe_name, Browser: msedge, Viewport: 1200 x 574, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product title is Appli Air x Night, DOM Id: #shoe_name, Browser: msedge, Viewport: 1200 x 574, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Add to cart button is displayed, DOM Id: #A__btn__114, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Quantity field is displayed, DOM Id: #DIV__numbersrow__102, Browser: msedge, Viewport: 1200 x 574, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Quantity field default value is 1, DOM Id: #quantity_1, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Quantity field minus button is displayed, DOM Id: #DIV__decbuttoni__105, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Quantity field plus button is displayed, DOM Id: #DIV__incbuttoni__104, Browser: msedge, Viewport: 1200 x 574, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product description is displayed, DOM Id: #P____83, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 3, Test Name: Product description text is correct, DOM Id: #P____83, Browser: msedge, Viewport: 1200 x 531, Device: Laptop, Status: Pass
+"Task: 1, Test Name: Filters label displayed, DOM Id: a.open_filters span, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Main menu NOT displayed, DOM Id: #DIV__mainmenu__15, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Wishlist icon NOT displayed, DOM Id: #A__wishlist__52, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Filters NOT displayed, DOM Id: #filter_col, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Grid view icon NOT displayed, DOM Id: i.ti-view-grid, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 1, Test Name: List view icon NOT displayed, DOM Id: i.ti-view-list, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 1, Test Name: All product tiles have heart, cart, control shuffle icons displayed, DOM Id: .grid_item ul li, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Search field displayed, DOM Id: #INPUTtext____42, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Search icon displayed, DOM Id: #I__headericon__44, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Magnifying glass icon NOT displayed, DOM Id: a.btn_search_mob, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Shopping cart quantity displayed, DOM Id: #STRONG____50, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 2, Test Name: Black shoes filter results have 2 products, DOM Id: .grid_item, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 2, Test Name: Black shoes filter results, all product tiles have heart, cart, control shuffle icons displayed, DOM Id: .grid_item ul li, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product image is displayed, DOM Id: #shoe_img, Browser: msedge, Viewport: 768 x 574, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product SKU is displayed, DOM Id: #SMALL____84, Browser: msedge, Viewport: 768 x 574, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product SKU value is MTKRY-001, DOM Id: #SMALL____84, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product size is small, DOM Id: .nice-select .current, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product price with discount is displayed, DOM Id: #new_price, Browser: msedge, Viewport: 768 x 574, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product price with discount is $33.00, DOM Id: #new_price, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product price with discount is displayed in blue color, DOM Id: #new_price, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product price without discount is displayed, DOM Id: #old_price, Browser: msedge, Viewport: 768 x 574, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product price without discount is $48.00, DOM Id: #old_price, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product price without discount is displayed in grey colour, DOM Id: #old_price, Browser: msedge, Viewport: 768 x 574, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product price without discount is strikethrough, DOM Id: #old_price, Browser: msedge, Viewport: 768 x 574, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product discount is displayed, DOM Id: #discount, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product discount is correct, DOM Id: #discount, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product review stars are displayed, DOM Id: #SPAN__rating__76 .icon-star, Browser: msedge, Viewport: 768 x 574, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product rating is 4 stars, DOM Id: #SPAN__rating__76 .icon-star, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product number of reviews label is displayed, DOM Id: #SPAN__rating__76 em, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product number of reviews label displays 4 reviews, DOM Id: #SPAN__rating__76 em, Browser: msedge, Viewport: 768 x 574, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product title is displayed, DOM Id: #shoe_name, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product title is Appli Air x Night, DOM Id: #shoe_name, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Add to cart button is displayed, DOM Id: #A__btn__114, Browser: msedge, Viewport: 768 x 574, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Quantity field is displayed, DOM Id: #DIV__numbersrow__102, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Quantity field default value is 1, DOM Id: #quantity_1, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Quantity field minus button is displayed, DOM Id: #DIV__decbuttoni__105, Browser: msedge, Viewport: 768 x 574, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Quantity field plus button is displayed, DOM Id: #DIV__incbuttoni__104, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product description is displayed, DOM Id: #P____83, Browser: msedge, Viewport: 768 x 531, Device: Tablet, Status: Pass
+"Task: 3, Test Name: Product description text is correct, DOM Id: #P____83, Browser: msedge, Viewport: 768 x 574, Device: Tablet, Status: Pass
+"Task: 1, Test Name: Search field NOT displayed, DOM Id: #INPUTtext____42, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 1, Test Name: Search icon NOT displayed, DOM Id: #I__headericon__44, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 1, Test Name: Magnifying glass icon displayed, DOM Id: a.btn_search_mob, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 1, Test Name: Shopping cart quantity NOT displayed, DOM Id: #STRONG____50, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 1, Test Name: Main menu NOT displayed, DOM Id: #DIV__mainmenu__15, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 1, Test Name: Wishlist icon NOT displayed, DOM Id: #A__wishlist__52, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 1, Test Name: Filters NOT displayed, DOM Id: #filter_col, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 1, Test Name: Grid view icon NOT displayed, DOM Id: i.ti-view-grid, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 1, Test Name: List view icon NOT displayed, DOM Id: i.ti-view-list, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 1, Test Name: All product tiles have heart, cart, control shuffle icons displayed, DOM Id: .grid_item ul li, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 1, Test Name: Filters label NOT displayed, DOM Id: a.open_filters span, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 2, Test Name: Black shoes filter results have 2 products, DOM Id: .grid_item, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 2, Test Name: Black shoes filter results, all product tiles have heart, cart, control shuffle icons displayed, DOM Id: .grid_item ul li, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Product image is displayed, DOM Id: #shoe_img, Browser: chrome, Viewport: 500 x 575, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Product SKU is displayed, DOM Id: #SMALL____84, Browser: chrome, Viewport: 500 x 575, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Product SKU value is MTKRY-001, DOM Id: #SMALL____84, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Product size is small, DOM Id: .nice-select .current, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Product price with discount is displayed, DOM Id: #new_price, Browser: chrome, Viewport: 500 x 575, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Product price with discount is $33.00, DOM Id: #new_price, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Product price with discount is displayed in blue color, DOM Id: #new_price, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Product price without discount is displayed, DOM Id: #old_price, Browser: chrome, Viewport: 500 x 575, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Product price without discount is $48.00, DOM Id: #old_price, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Product price without discount is displayed in grey colour, DOM Id: #old_price, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Product price without discount is strikethrough, DOM Id: #old_price, Browser: chrome, Viewport: 500 x 575, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Product discount is displayed, DOM Id: #discount, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Product discount is correct, DOM Id: #discount, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Product review stars are displayed, DOM Id: #SPAN__rating__76 .icon-star, Browser: chrome, Viewport: 500 x 575, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Product rating is 4 stars, DOM Id: #SPAN__rating__76 .icon-star, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Product number of reviews label is displayed, DOM Id: #SPAN__rating__76 em, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Product number of reviews label displays 4 reviews, DOM Id: #SPAN__rating__76 em, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Product title is displayed, DOM Id: #shoe_name, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Product title is Appli Air x Night, DOM Id: #shoe_name, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Add to cart button is displayed, DOM Id: #A__btn__114, Browser: chrome, Viewport: 500 x 575, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Quantity field is displayed, DOM Id: #DIV__numbersrow__102, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Quantity field default value is 1, DOM Id: #quantity_1, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Quantity field minus button is displayed, DOM Id: #DIV__decbuttoni__105, Browser: chrome, Viewport: 500 x 575, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Quantity field plus button is displayed, DOM Id: #DIV__incbuttoni__104, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Product description is displayed, DOM Id: #P____83, Browser: chrome, Viewport: 500 x 531, Device: Mobile, Status: Pass
+"Task: 3, Test Name: Product description text is correct, DOM Id: #P____83, Browser: chrome, Viewport: 500 x 575, Device: Mobile, Status: Pass

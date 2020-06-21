@@ -130,17 +130,23 @@ describe('Task 2 - Filter Results', () => {
     const productListingPage = new ProductListingPage();
     const taskNumber = 2;
 
-    it('Black shoes filter results', function () {
+    it('Black shoes filter results have 2 products', function () {
         const numberOfBLackShoes = productListingPage.filterBlackShoes();
-
         assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productListingPage.productsList.selector.toString(), numberOfBLackShoes === 2, true));
-        if(isLaptop) {
-            assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productListingPage.productTileHeartCartControlShuffleIcons.selector.toString(), productListingPage.allProductTilesDoNotHaveIcons(), true));
-        }
-        if(isMobile || isTablet) {
-            assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productListingPage.productTileHeartCartControlShuffleIcons.selector.toString(), productListingPage.allProductTilesHaveIcons(), true));
-        }
     });
+
+    if(isLaptop) {
+        it('Black shoes filter results, all product tiles DO NOT have heart, cart, control shuffle icons displayed', function () {
+            productListingPage.filterBlackShoes();
+            assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productListingPage.productTileHeartCartControlShuffleIcons.selector.toString(), productListingPage.allProductTilesDoNotHaveIcons(), true));
+        });
+    }
+    if(isMobile || isTablet) {
+        it('Black shoes filter results, all product tiles have heart, cart, control shuffle icons displayed', function () {
+            productListingPage.filterBlackShoes();
+            assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productListingPage.productTileHeartCartControlShuffleIcons.selector.toString(), productListingPage.allProductTilesHaveIcons(), true));
+        });
+    }
 });
 
 describe('Task 3 - Product Details Test', () => {
@@ -184,6 +190,10 @@ describe('Task 3 - Product Details Test', () => {
 
     it('Product price with discount is $33.00', function () {
         assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.priceWithDiscount.selector, productDetailPage.checkPriceWithDiscount('$33.00'), true));
+    });
+
+    it('Product price with discount is displayed in blue color', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.priceWithDiscount.selector, productDetailPage.isColorOfPriceWithDiscountBlue(), true));
     });
 
     it('Product price without discount is displayed', function () {
@@ -232,5 +242,33 @@ describe('Task 3 - Product Details Test', () => {
 
     it('Product title is Appli Air x Night', function () {
         assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.title.selector, productDetailPage.checkTitle('Appli Air x Night'), true));
+    });
+
+    it('Add to cart button is displayed', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.addToCartButton.selector, productDetailPage.addToCartButton.isDisplayed(), true));
+    });
+
+    it('Quantity field is displayed', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.qtyField.selector, productDetailPage.qtyField.isDisplayed(), true));
+    });
+
+    it('Quantity field default value is 1', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.qtyFieldValue.selector, productDetailPage.checkQtyFieldValue('1'), true));
+    });
+
+    it('Quantity field minus button is displayed', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.qtyMinusButton.selector, productDetailPage.qtyMinusButton.isDisplayed(), true));
+    });
+
+    it('Quantity field plus button is displayed', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.qtyPlusButton.selector, productDetailPage.qtyPlusButton.isDisplayed(), true));
+    });
+
+    it('Product description is displayed', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.productDescription.selector, productDetailPage.productDescription.isDisplayed(), true));
+    });
+
+    it('Product description text is correct', function () {
+        assert.isTrue(reporter.writeRecord(taskNumber, this.test!.title, productDetailPage.productDescription.selector, productDetailPage.checkProductDescriptionText(), true));
     });
 });
