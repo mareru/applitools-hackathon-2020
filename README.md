@@ -20,7 +20,7 @@ Modern script results ran against version 1 of the app are [here > Eyes Batch Re
 
 Modern script results ran against version 2 of the app are [here > Eyes Batch Results](https://eyes.applitools.com/app/test-results/00000251809542431441) in my Applittols Dashboard app.
 
-All tests run headless, and you can check status of the execution in the console. 
+All tests run headless, and you can check execution status in the console. 
 ## Requirements
 
 - [NodeJS](https://nodejs.org/en/) version v10.16.3 or higher.
