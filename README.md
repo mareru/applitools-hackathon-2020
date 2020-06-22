@@ -23,7 +23,9 @@ Modern script results ran against version 2 of the app are [here > Eyes Batch Re
 All tests run headless, and you can check execution status in the console. 
 ## Requirements
 
-- [NodeJS](https://nodejs.org/en/) version v10.16.3 or higher.
+- [NodeJS](https://nodejs.org/en/) version v10.16.3 or higher. Once downloaded it will also download node package manager (npm) for you.
+  - to check node version: `node --version`
+  - to check npm version: `npm --version`
 - installed browsers:
   - [Chrome](https://www.google.com/chrome/) - used version `83.0.4103.106(64-bit)`
   - [Firefox](https://www.mozilla.org/en-US/firefox/new/) - used version `77.0.1(64-bit)`
